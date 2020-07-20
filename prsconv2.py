@@ -14,6 +14,9 @@ if __name__ == '__main__':
     certain format. If it has been renamed, the script may throw an error.'''
     parser = argparse.ArgumentParser(description=desc)
     mutex_grp = parser.add_mutually_exclusive_group()
+    # TODO: How many of these per-read stats are actually used?
+    # TODO: Make required arguments required
+    # TODO: Hyphenate multi-word metavars
     # TODO: Add some print statements
     mutex_grp.add_argument('-v', '--verbose', help='Print lots', dest='v',
                         metavar='\b')
@@ -23,6 +26,7 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--overwrite', help='Overwrite the CSV if it '
                         + 'exists', metavar='\b')
     # TODO: Implement version option
+    # TODO: Make version option mutually exclusive with other options
     parser.add_argument('--version', help='Print version and exit')
     # TODO: Check that Basecalled_000 is the correct default name
     # TODO: Specify whether basecalled subgroup is for experimental, control, both

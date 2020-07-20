@@ -1,0 +1,7 @@
+*.swp
+*.tombo.per_read_stats
+*.csv
+*.ipynb_checkpoints
+tests/*
+!tests/*.sh
+
