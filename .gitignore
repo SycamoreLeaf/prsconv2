@@ -2,6 +2,7 @@
 *.tombo.per_read_stats
 *.csv
 *.ipynb_checkpoints
+*.pyc
 tests/*
 !tests/*.sh
 
