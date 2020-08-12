@@ -4,6 +4,7 @@
 
 import os.path
 import cli # Module from this directory that defines an argparse parser
+import pandas as pd
 
 def recarray_to_csv(recarray, output_path):
     '''Convert record array output from tombo.tombo_stats.PerReadStatistics
@@ -23,7 +24,6 @@ def recarray_to_csv(recarray, output_path):
     )
 
 if __name__ == '__main__':
-    import pandas as pd
     from tombo import tombo_helper, tombo_stats
 
     args = cli.parser.parse_args()
